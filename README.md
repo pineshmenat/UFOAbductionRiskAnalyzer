@@ -1,0 +1,2 @@
+# UFOAbductionRiskAnalyzer
+UFO Abduction Risk Analyzer is a Web application for finding one's risk of abduction based on real time user location. Website plots all the UFOs from National UFO Reporting Center (NUFORC) on Google maps. Each UFO object provides necessary details like shape, location and weather details. It provides abduction details from YouTube, Blogger, Flickr and other trusted sources for the category of UFO on analyzing individual UFO object on Google Maps. • Technologies - XML, JSON, Ajax, JavaScript, jQuery, Bootstrap, HTML, API integrations
