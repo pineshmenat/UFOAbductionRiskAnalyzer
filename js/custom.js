@@ -536,7 +536,7 @@ function analyzeRisk(plotMarker) {
 
 // ========== START YOUTUBE ========== //
 function initYT() {
-    gapi.client.setApiKey("AIzaSyA-iNH1KxjrmLNcvkelu6X-thApHPHiQbs");
+    gapi.client.setApiKey("AIzaSyBxnezgZyEmXcoAqTfvWnY1kb2evjk6-hs");
     gapi.client.load("youtube", "v3", function() {
         // yt api is ready
         //console.log('yt apiready');
@@ -550,7 +550,7 @@ function populateFlickrPhotos(photoHashtag) {
     $("#flickrPhotos").empty();
     //by hashtag
     var hashtag = "ufo"+photoHashtag;
-    $.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?tags=' + hashtag + "&tagmode=any&format=json&jsoncallback=?",
+    $.getJSON('https://api.flickr.com/services/feeds/photos_public.gne?tags=' + hashtag + "&tagmode=any&format=json&jsoncallback=?",
         function(data) {
             $("#images").hide().html(data).fadeIn('fast');
             $.each(data.items, function(i, item) {
@@ -744,8 +744,8 @@ function populateWeatherInfos(city, state) {
         }
     }
     city = city.replace(" ", "_");
-    var v = "http://api.wunderground.com/api/8078b0b9d503c443/conditions/q/" + state + "/" + city + ".json";
-    //var v = "http://api.wunderground.com/api/8078b0b9d503c443/geolookup/q/37.776289,-122.395234.json";
+    var v = "https://api.wunderground.com/api/8078b0b9d503c443/conditions/q/" + state + "/" + city + ".json";
+    //var v = "https://api.wunderground.com/api/8078b0b9d503c443/geolookup/q/37.776289,-122.395234.json";
     xmlhttp.open("get", v);
     xmlhttp.send(null);
     //alert("--"+weatherGenerated);
